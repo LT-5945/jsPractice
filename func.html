@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>How to use a function in htmlpage</title> 
+</head>
+<body>
+
+<h1>我的 Web 页面</h1>
+<p id="myPar">我是一个段落。</p>
+<div id="myDiv">我是一个div。</div>
+<p>
+<button type="button" onclick="myFunction()">点击这里</button>
+</p>
+<script>
+function myFunction(){
+    orz="orz";
+	document.getElementById("myPar").innerHTML=orz;
+    document.getElementById("myDiv").innerHTML="你最近怎么样?";
+}
+</script>
+<p>当您点击上面的按钮时，两个元素会改变。</p>
+
+
+
+<p id="cool">test</p>
+<p>
+<button type="button" onclick="cool()">click here</button>
+</p>
+<script>
+function cool(){
+    document.getElementById("cool").innerHTML="TEST";
+    alert("???");
+}
+</script>
+<script src="basicGramma.js"></script>
+</body>
+</html>
